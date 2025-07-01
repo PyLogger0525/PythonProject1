@@ -486,3 +486,16 @@ from os import remove
 # res = (" ".join(sorted(map(str, a_and_b)))) # map str применяем для преобразования каждого символа в строку, чтобы передать в join для объединения этих строк и вывести результат одной строкой (без , и скобок)
 # print(res)
 
+# Задание 3. Pyton-Academy.
+
+# Находим предпоследнее максимальное число
+# n = int(input())
+# scores = list(map(int, input().split()))
+# s = []
+# for i in scores:
+#     if i<max(scores):
+#         s.append(i)
+# print(max(s))
+
+
+
