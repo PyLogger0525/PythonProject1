@@ -541,18 +541,54 @@ from os import remove
 # print("".join(t5))
 
 # Переведите в верхний регистр все подстроки, в которых количество букв меньше или равно трем.
-s='a bc def ghij'
-s1=s.split()
-c=[]
-c1=[]
-for i in s1:
-    if len(i)>3:
-        c.append(i)
-    if len(i)<=3:
-        c1.append(i.upper())
-print(" ".join(c1+c))
+# s='a bc def ghij'
+# s1=s.split()
+# c=[]
+# c1=[]
+# for i in s1:
+#     if len(i)>3:
+#         c.append(i)
+#     if len(i)<=3:
+#         c1.append(i.upper())
+# print(" ".join(c1+c))
 
 
+# Уровень 3.8 задачника Python # №1 Дан список с числами. Проверьте, что все числа из этого списка содержат в себе цифру 3.
 
+# s = input().split()
+# c = []
+# for i in s:
+#     if '3' in i:
+#         c.append(i)
+# if c == s:
+#     print(True)
+# else:
+#     print(False)
 
+# Уровень 3.9 задачника Python. Найдите все числа от 1 до 1000, сумма цифр которых равна 13. Результат запишите в сет.
 
+# s = range(1001)
+# c=[]
+# for i in (s):
+#     if (i//10)+(i%10)==13:
+#         c.append(i)
+# print(set(c))
+
+# Реализовать функцию find_median, которая вычисляет медиану заданного набора чисел. Формат ввода # Функция получает строку, содержащую целые числа, разделенные пробелами.
+#Функция должна возвращать: Медианное значение чисел. Если результат является целым числом, верните целое число; в противном случае — число с плавающей точкой, округленное до 1 знака после запятой.
+
+# def median(input_string):
+#     lst1=list(map(float, input_string.split()))
+#     lst = sorted(lst1)
+#     if len(lst) % 2 == 0:
+#         l=(lst[(len(lst) // 2)-1] + lst[len(lst) // 2])/2
+#         while l%2==0:
+#             return (l)
+#         else:
+#             return round(l, 2)
+#     else:
+#         return lst[len(lst) // 2]
+#
+# input_string = input().strip()
+# result = median(input_string)
+# print(result)
